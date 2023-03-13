@@ -8,7 +8,7 @@ int cbinsearch(int *arr, int size, int value) {
     int a = 0;
     int b = size - 1;
     while (true) {
-        if ((b - a)<0) {
+        if ((b - a) < 0) {
             return x;
         }
         if (arr[(b + a) / 2] == value) {
@@ -25,8 +25,6 @@ int cbinsearch(int *arr, int size, int value) {
         if (arr[(b + a) / 2] >= value) {
             b = (b + a) / 2;
             --b;
-            
-        }
-        
+        } 
     }
 }
